@@ -1,0 +1,16 @@
+<?php
+
+$dbHost= "localhost";
+$dbName ="crud_app";
+$dbpassword = "";
+$dbusername = "root";
+
+//$con = mysqli_connect($dbHost, $dbName, $dbpassword, $dbusername);
+
+$con = mysqli_connect($dbHost, $dbusername, $dbpassword, $dbName);
+
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+?>
